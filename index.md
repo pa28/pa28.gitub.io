@@ -18,4 +18,17 @@ artifacts:
     * The library, sample programs and application with supporting
     resources;
     * A package for developers.
+
+### [hamclock-systemd](/hamclock-systemd)
+
+This project creates a Debian package to install a compiled version of
+[HamClock](https://www.clearskyinstitute.com/ham/HamClock/) and enable
+launch on boot using
+[systemd](https://www.freedesktop.org/wiki/Software/systemd/).
+
+Unfortunately the use of `/dev/fb0` has been depricated in HamClock
+and those binaries no longer compile with the distributed source code.
+This packe still builds the four binaries that provide applications
+supporting four different resolutions that run under X11.
+
       
