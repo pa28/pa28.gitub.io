@@ -1,6 +1,6 @@
 ## Current Projects
 
-### [Rose - *Rendering On Small Environments*](https://github.com/pa28/Rose)
+### [Rose - *Rendering On Small Environments*](/Rose)
 
 Rose is intended, primarily as a Graphic User Interface library for
 Raspberry Pi computers with a small touch screen to support application
