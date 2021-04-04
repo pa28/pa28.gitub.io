@@ -50,7 +50,7 @@ A C++ header only library to compute FFT.
 
 ### [C++ IIR Filters](https://github.com/pa28/iir1)
 
-Forked from [berndporr/iir1](https://github.com/berndporr/iir1).
+Forked from [https://github.com/berndporr/iir1](https://github.com/berndporr/iir1).
 Release 1.8.1 included Debian packages for amd64 and armhf architecture. 
 
       
