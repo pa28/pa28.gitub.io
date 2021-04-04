@@ -42,4 +42,15 @@ and ARM:
 * `hamclock-systemd` for systems running `/dev/fb0` graphics. Last available
 version 2.59.
 
+### [FFT](https://github.com/pa28/fft)
+
+A C++ header only library to compute FFT.
+
+## Forked Repositories
+
+### [C++ IIR Filters](https://github.com/pa28/iir1)
+
+Forked from [berndporr/iir1](https://github.com/berndporr/iir1).
+Release 1.8.1 included Debian packages for amd64 and armhf architecture. 
+
       
