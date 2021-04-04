@@ -41,3 +41,7 @@ and ARM:
 * `hamclock` for systems running an X11 based desktop UI.
 * `hamclock-systemd` for systems running `/dev/fb0` graphics. Last available
 version 2.59.
+
+### [FFT](https://github.com/pa28/fft)
+
+A C++ header only library to compute FFT.
