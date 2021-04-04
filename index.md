@@ -41,6 +41,3 @@ and ARM:
 * `hamclock` for systems running an X11 based desktop UI.
 * `hamclock-systemd` for systems running `/dev/fb0` graphics. Last available
 version 2.59.
-
-## Repositories of Interest
-
