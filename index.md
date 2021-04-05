@@ -42,9 +42,12 @@ and ARM:
 * `hamclock-systemd` for systems running `/dev/fb0` graphics. Last available
 version 2.59.
 
-### [FFT](https://github.com/pa28/fft)
+### [DSP](https://github.com/pa28/DSP)
 
-A C++ header only library to compute FFT.
+C++ Header only (so far) Digital Signal Processing objects.
+* Signal.h Abstractions of real and complex Linear Time Invariant signal segments, includes FFT.
+* Costas.h A Costas Loop implementation. Requires IIR Filters from
+[https://github.com/berndporr/iir1](https://github.com/berndporr/iir1)
 
 ## Forked Repositories
 
