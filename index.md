@@ -42,7 +42,7 @@ and ARM:
 * `hamclock-systemd` for systems running `/dev/fb0` graphics. Last available
 version 2.59.
 
-### [DSP](https://pa28/github.io/DSP)
+### [DSP](https://pa28.github.io/DSP/)
 
 C++ Header only (so far) Digital Signal Processing objects including:
 * Linear Time Invariant signal abstractions;
