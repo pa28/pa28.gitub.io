@@ -178,7 +178,7 @@ Last login: Tue Apr 13 10:11:35 2021 from 192.168.1.140
 root@smartypi:~# 
 ```
 
-## Generating and Exchanging `ssh` Public Keys.
+## Generating and Exchanging ssh Public Keys.
 
 The `ssh` command provides a simple command to generate a public-private key pair by any user on the system. The
 public key of the pair can be safely shared in an unencrypted setting. Only a process with access to the corresponding
