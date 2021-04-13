@@ -48,7 +48,8 @@ richard@smartypi:~ $ sudo su
 root@smartypi:/home/richard# 
 ```
 
-Set the `root` password if necessary: 
+Set the `root` password if necessary:
+
 ```
 root@smartypi:/home/richard# passwd
 New password: 
@@ -59,9 +60,11 @@ passwd: password updated successfully
 Change the `ssh` daemon configuration. The `ssh` daemon is contained in `/etc/ssh/sshd_config`. Use your favourite
 editor to open this file and find the line with `PermitRootLogin` in it, change it to `PermitRootLogin yes`, save
 and close `/etc/ssh/sshd_config`:
+
 ```
 root@smartypi:/home/richard# vi /etc/ssh/sshd_config
 ```
+
 ```
 # Authentication:
 
@@ -73,11 +76,13 @@ PermitRootLogin yes
 ```
 
 Restart the `sshd` daemon so that the changes take effect:
+
 ```
 root@smartypi:/home/richard# systemctl restart sshd
 ```
 
 You should now be able to logout of the target system and logon as root using the root password:
+
 ```
 root@smartypi:/home/richard# exit
 exit
@@ -102,6 +107,7 @@ If this is what you want you are done. But it is strongly recommended that you e
 disable password based longon for `root`.
 
 Logoff the target system and transfer your `ssh` public key identification to the target system:
+
 ```
 root@smartypi:~# exit
 logout
@@ -118,6 +124,7 @@ and check to make sure that only the key(s) you wanted were added.
 ```
 
 Check that public key logon works:
+
 ```
 richard@tardis:~$ ssh root@smartypi
 Linux smartypi 5.10.17-v7+ #1403 SMP Mon Feb 22 11:29:51 GMT 2021 armv7l
@@ -133,6 +140,7 @@ root@smartypi:~#
 ```
 
 Disable `root` logon using a password by editing `/etc/ssh/sshd_config` and change `PermitRootLogin`:
+
 ```
 root@smartypi:~# vi /etc/ssh/sshd_config 
 ```
@@ -148,6 +156,7 @@ PermitRootLogin prohibit-password
 ```
 
 Restart the `sshd` daemon so that the changes take effect:
+
 ```
 root@smartypi:/home/richard# systemctl restart sshd
 ```
