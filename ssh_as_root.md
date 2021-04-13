@@ -49,7 +49,7 @@ root@smartypi:/home/richard#
 ```
 
 Set the `root` password if necessary: 
-```shell script
+```
 root@smartypi:/home/richard# passwd
 New password: 
 Retype new password: 
@@ -59,7 +59,7 @@ passwd: password updated successfully
 Change the `ssh` daemon configuration. The `ssh` daemon is contained in `/etc/ssh/sshd_config`. Use your favourite
 editor to open this file and find the line with `PermitRootLogin` in it, change it to `PermitRootLogin yes`, save
 and close `/etc/ssh/sshd_config`:
-```shell script
+```
 root@smartypi:/home/richard# vi /etc/ssh/sshd_config
 ```
 ```
@@ -73,12 +73,12 @@ PermitRootLogin yes
 ```
 
 Restart the `sshd` daemon so that the changes take effect:
-```shell script
+```
 root@smartypi:/home/richard# systemctl restart sshd
 ```
 
 You should now be able to logout of the target system and logon as root using the root password:
-```shell script
+```
 root@smartypi:/home/richard# exit
 exit
 richard@smartypi:~ $ exit
@@ -102,7 +102,7 @@ If this is what you want you are done. But it is strongly recommended that you e
 disable password based longon for `root`.
 
 Logoff the target system and transfer your `ssh` public key identification to the target system:
-```shell script
+```
 root@smartypi:~# exit
 logout
 Connection to smartypi closed.
@@ -118,7 +118,7 @@ and check to make sure that only the key(s) you wanted were added.
 ```
 
 Check that public key logon works:
-```shell script
+```
 richard@tardis:~$ ssh root@smartypi
 Linux smartypi 5.10.17-v7+ #1403 SMP Mon Feb 22 11:29:51 GMT 2021 armv7l
 
@@ -133,10 +133,11 @@ root@smartypi:~#
 ```
 
 Disable `root` logon using a password by editing `/etc/ssh/sshd_config` and change `PermitRootLogin`:
-```shell script
+```
 root@smartypi:~# vi /etc/ssh/sshd_config 
 ```
-```shell script
+
+```
 # Authentication:
 
 #LoginGraceTime 2m
@@ -147,13 +148,14 @@ PermitRootLogin prohibit-password
 ```
 
 Restart the `sshd` daemon so that the changes take effect:
-```shell script
+```
 root@smartypi:/home/richard# systemctl restart sshd
 ```
 
 You will now be able to logon as `root` directly using `ssh` but a brute force attack on your `root` password over
 the network will be prevented:
-```shell script
+
+```
 richard@tardis:~$ ssh root@smartypi
 Linux smartypi 5.10.17-v7+ #1403 SMP Mon Feb 22 11:29:51 GMT 2021 armv7l
 
@@ -179,7 +181,7 @@ Enter the following command and follow the instructions. The defaults are usuall
 password to encrypt the private key if you have some reason to doubt the security of the key on the system; an
 untrusted system administrator for example.
 
-```shell script
+```
 richard@tardis:~$ ssh-keygen 
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/richard/.ssh/id_rsa): 
@@ -209,7 +211,7 @@ richard@tardis:~$
 
 You must have password logon permission on the remote system.
 
-```shell script
+```
 richard@tardis:~$ ssh-copy-id smartypi
 /usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
 /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
