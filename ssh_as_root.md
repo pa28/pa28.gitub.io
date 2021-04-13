@@ -28,9 +28,8 @@ way it is configured by default.
 
 If you aren't using `ssh` see the section on creating and exchanging `ssh` keys below.
  
-Logon to the target system:
-
-```
+Logon to the target system: 
+```shell script
 richard@tardis:~$ ssh smartypi
 Linux smartypi 5.10.17-v7+ #1403 SMP Mon Feb 22 11:29:51 GMT 2021 armv7l
 
@@ -63,7 +62,6 @@ and close `/etc/ssh/sshd_config`:
 ```shell script
 root@smartypi:/home/richard# vi /etc/ssh/sshd_config
 ```
-
 ```
 # Authentication:
 
