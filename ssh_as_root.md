@@ -104,7 +104,7 @@ root@smartypi:~#
 ```
 
 If this is what you want you are done. But it is strongly recommended that you enable public key logon and then
-disable password based longon for `root`.
+disable password based logon for `root`.
 
 Logoff the target system and transfer your `ssh` public key identification to the target system:
 
