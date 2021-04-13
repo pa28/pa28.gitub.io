@@ -43,7 +43,7 @@ Last login: Tue Apr 13 08:59:50 2021 from 192.168.1.140
 ```
 
 become `root` using `sudo`:
-```shell script
+```
 richard@smartypi:~ $ sudo su
 root@smartypi:/home/richard# 
 ```
