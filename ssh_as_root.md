@@ -24,9 +24,9 @@ The first step is to enable `root` to logon the the target system with a passwor
 a password on the target system and you know what it is. This may not be the case on a Raspberry Pi because of the
 way it is configured by default.
 
-### Logon to the target system as the user with `sudo` privileges.
+### Logon to the target system as the user with sudo privileges.
 
-If you aren't using `ssh` see the section on creating and exchanging `ssh` keys below.
+If you aren't using ssh see the section on creating and exchanging ssh keys below.
  
 Logon to the target system: 
 ```shell script
