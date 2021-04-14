@@ -128,7 +128,7 @@ ln -s /usr/share/zoneinfo/America/Toronto /media/richard/rootfs/etc/localtime
 If you get software and updates from non-standard Debian repositories ([like mine](/Repository)) you can also configure
 these at this time. For my personal repository these commands do the job:
 
-```shell script
+```
 
 cat << EOF > /media/richard/rootfs/etc/apt/sources.list.d/ve3ysh.list
 deb [trusted=yes] https://apt.fury.io/ve3ysh/ /
