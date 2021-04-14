@@ -129,9 +129,11 @@ If you get software and updates from non-standard Debian repositories ([like min
 these at this time. For my personal repository these commands do the job:
 
 ```shell script
+
 cat << EOF > /media/richard/rootfs/etc/apt/sources.list.d/ve3ysh.list
 deb [trusted=yes] https://apt.fury.io/ve3ysh/ /
 EOF
+
 ``` 
 
 ### Putting it all together
