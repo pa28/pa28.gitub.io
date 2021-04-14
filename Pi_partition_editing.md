@@ -125,7 +125,7 @@ ln -s /usr/share/zoneinfo/America/Toronto /media/richard/rootfs/etc/localtime
 
 ### Adding Non-Standard Repositories
 
-If you get software and updates from non-standard Debian repositories ([like mine](/Repository)) you can also configure
+If you get software and updates from non-standard Debian repositories [like mine](/Repository) you can also configure
 these at this time. For my personal repository these commands do the job:
 
 ```
