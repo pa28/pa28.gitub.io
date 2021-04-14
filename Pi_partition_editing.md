@@ -145,7 +145,7 @@ to my Pies once I have had a chance to document them.
 
 Change `MyWiFiNetwork` to your WiFi SSID, and `MyPre-SharedKey` to your WiFi pre-shared key.
 
-```shell
+```
 
 #!/bin/sh
 MOUNT="/media/richard"  # Change to the mount point per your personal system.
