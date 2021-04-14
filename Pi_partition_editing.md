@@ -117,8 +117,10 @@ It is always useful to have your Pi in the same time zone as you are. It is an e
 the following commands (substituting your media path and time zone of course):
 
 ```
+
 rm /media/richard/rootfs/etc/localtime
 ln -s /usr/share/zoneinfo/America/Toronto /media/richard/rootfs/etc/localtime
+
 ```
 
 ### Adding Non-Standard Repositories
