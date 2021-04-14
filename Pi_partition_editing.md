@@ -15,7 +15,7 @@ Mac, etc.
 first boot, or at some later time. Provided to make it easier to configure *headless* Raspberry Pi systems so they can
 be accessed over the network.
 
-*The root partition*
+*The rootfs partition*
 1. Contains an EXT3 file system that can be mounted, read and modified on any Linux and many Unix based desktop PC
 systems. Mounting, reading or modifying on a Windows system requires addition of special software which is beyond
 the scope of this tutorial.
@@ -116,7 +116,7 @@ ff02::2         ip6-allrouters
 It is always useful to have your Pi in the same time zone as you are. It is an easy change on the SDCard by using
 the following commands (substituting your media path and time zone of course):
 
-```shell script
+```
 rm /media/richard/rootfs/etc/localtime
 ln -s /usr/share/zoneinfo/America/Toronto /media/richard/rootfs/etc/localtime
 ```
