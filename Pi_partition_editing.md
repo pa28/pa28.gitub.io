@@ -145,7 +145,8 @@ to my Pies once I have had a chance to document them.
 
 Change `MyWiFiNetwork` to your WiFi SSID, and `MyPre-SharedKey` to your WiFi pre-shared key.
 
-```shell script
+```
+
 #!/bin/sh
 MOUNT="/media/richard"  # Change to the mount point per your personal system.
 HOSTNAME="smartypi"     # Set the host name you want this specific Pi to use.
@@ -181,4 +182,5 @@ EOF
 # Set the local time zone for the system.
 rm ${MOUNT}/rootfs/etc/localtime
 ln -s /usr/share/zoneinfo/America/Toronto ${MOUNT}/rootfs/etc/localtime
+
 ```
