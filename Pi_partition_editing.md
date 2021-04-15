@@ -3,6 +3,9 @@
 This is a small tutorial on some of the things you can do by editing one or both of the partitions on a Raspberry Pi
 SDCard. It is not an in-depth discussion of how these partitions work, or what they contain.
 
+Depending on the *userid* on the system used to edit files, and the *userid* of the files being edited the editing
+may have to be done by the *root* user. 
+
 The standard way to boot a Raspberry Pi is from an SDCard. There are two partitions on the card `boot` and `rootfs`.
 The `boot` partition, as its name implies, is responsible for booting the machine. The `rootfs` partition is mounted
 at the root of the filesystem during the boot process. The properties of these file systems allow you to make some
