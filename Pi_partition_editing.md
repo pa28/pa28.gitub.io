@@ -117,10 +117,8 @@ It is always useful to have your Pi in the same time zone as you are. It is an e
 the following commands (substituting your media path and time zone of course):
 
 ```
-
 rm /media/richard/rootfs/etc/localtime
 ln -s /usr/share/zoneinfo/America/Toronto /media/richard/rootfs/etc/localtime
-
 ```
 
 ### Adding Non-Standard Repositories
@@ -129,11 +127,9 @@ If you get software and updates from non-standard Debian repositories [like mine
 these at this time. For my personal repository these commands do the job:
 
 ```
-
 cat << EOF > /media/richard/rootfs/etc/apt/sources.list.d/ve3ysh.list
 deb [trusted=yes] https://apt.fury.io/ve3ysh/ /
 EOF
-
 ``` 
 
 ### Putting it all together
@@ -146,7 +142,6 @@ to my Pies once I have had a chance to document them.
 Change `MyWiFiNetwork` to your WiFi SSID, and `MyPre-SharedKey` to your WiFi pre-shared key.
 
 ```
-
 #!/bin/sh
 MOUNT="/media/richard"  # Change to the mount point per your personal system.
 HOSTNAME="smartypi"     # Set the host name you want this specific Pi to use.
@@ -180,5 +175,4 @@ EOF
 # Set the local time zone for the system.
 rm ${MOUNT}/rootfs/etc/localtime
 ln -s /usr/share/zoneinfo/America/Toronto ${MOUNT}/rootfs/etc/localtime
-
 ```
