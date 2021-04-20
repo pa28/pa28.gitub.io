@@ -114,6 +114,12 @@ ff02::2         ip6-allrouters
 127.0.1.1       my-special-pi
 ```
 
+You will also have to put the host name in `/etc/hostname` which you can do with this command:
+
+```
+sudo echo "my-special-pi" > /media/richard/rootfs/etc/hostname
+```
+
 ### Setting the Time Zone
 
 It is always useful to have your Pi in the same time zone as you are. It is an easy change on the SDCard by using
