@@ -1,5 +1,7 @@
 # Editing Raspberry Pi OS SDCard Partitions
 
+You may also wish to have a look at my [script for doing this stuff](https://github.com/pa28/headless_pi).
+
 This is a small tutorial on some of the things you can do by editing one or both of the partitions on a Raspberry Pi
 SDCard. It is not an in-depth discussion of how these partitions work, or what they contain.
 
