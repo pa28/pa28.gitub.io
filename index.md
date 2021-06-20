@@ -31,16 +31,10 @@ This project creates a Debian package to install a compiled version of
 launch on boot using
 [systemd](https://www.freedesktop.org/wiki/Software/systemd/).
 
-Unfortunately the use of `/dev/fb0` has been depricated in HamClock
-and those binaries no longer compile with the distributed source code.
-This packe still builds the four binaries that provide applications
-supporting four different resolutions that run under X11.
-
 [Packages](/Repository) available for Debian derived Linux distribution on Intel/AMD
 and ARM:
 * `hamclock` for systems running an X11 based desktop UI.
-* `hamclock-systemd` for systems running `/dev/fb0` graphics. Last available
-version 2.59.
+* `hamclock-systemd` for systems running `/dev/fb0` graphics.
 
 ### [DSP](https://pa28.github.io/DSP/)
 
