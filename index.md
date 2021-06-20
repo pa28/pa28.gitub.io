@@ -24,7 +24,7 @@ artifacts:
     resources;
     * A package for developers.
 
-### [hamclock-systemd](/hamclock-systemd)
+### [hamclock-systemd](/hamclock-systemd) Updated.
 
 This project creates a Debian package to install a compiled version of
 [HamClock](https://www.clearskyinstitute.com/ham/HamClock/) and enable
