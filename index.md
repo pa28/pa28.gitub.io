@@ -5,6 +5,13 @@
 When I create packages for my projects they will be available in
 my repository.
 
+### [Time-Series Data Daemons](/APRS_WX)
+
+I use [infuxDB](www.influxdata/com) and [Grafana](grafana.com) quite
+at bit for various projects. I have written some stand-alone data
+collection daemons that also interface to influxDB for data storage.
+These are kept in the [APRS_WX](/APRS_WX) project.
+
 ### [Rose - *Rendering On Small Environments*](/Rose)
 
 Rose is intended, primarily as a Graphic User Interface library for
