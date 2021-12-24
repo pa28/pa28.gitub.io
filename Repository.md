@@ -6,26 +6,30 @@ When projects are ready I usually make them available in my repositories:
 
 I have made meta-packages, packages that you can download from git hub and install to set up access to the package repository.
 
-## repo.vfrott.ca
+## [repo.vfrott.ca](https://repo.vfrott.ca)
 
-This repository is served by a single meta-package for all architectures, though the available binary packages are still only
-for `amd64` (Intel/ARM 64 bit) and `armhf` (Raspberry Pi 32 bit), the only two architectures I currently build for. The repository
-is signed, unfortunately the [GemFury](https://gemfury.com/) repo is not.
+This repository is served by a three meta-packages for the architectures I build for:
+<dl>
+  <dt>vfrott-bullseye</dt>
+  <dd>Stable packages for Raspberry Pi OS Bullseye 32 and 64 bit (armhf, arm64)</dd>
+  <dt>vfrott-buster</dt>
+  <dd>Stable packages for Raspberry Pi OS Buster 32 bit only (armhf)</dd>
+  <dt>vfrott-stable</dt>
+  <dd>Stable packages for Debian derived distributions, currently Intel/AMD only.</dd>
+</dl>
 
-1. Download and save the the repo package [vfrott-repo](https://github.com/pa28/hamclock-systemd/releases/download/V2.65/vfrott-repo_0.0.1-1_all.deb)
-2. Confirm the SHA256 check sum is `9922e105c4593e082233ce2097cfb186adac478f02fae9ad5f1fb6ddcc90429e`, for redundancy this sum is also available from [rep.vfrott.ca](https://repo.vfrott.ca/).
-```
-sha256sum vfrott-repo_0.0.1-1_all.deb
-```
-3. Install the repo package:
-```
-sudo apt install -f ./vfrott-repo_0.0.1-1_all.deb
-sudo apt update
-```
+Checksums for the meta packages are listed on the repository webpage and are copied here for added confidence.
+This repository is served by a three meta-packages for the architectures I build for:
+<dl>
+  <dt>vfrott-bullseye</dt>
+  <dd>bef3ab3b61d99ce04558b8358d2194384622a8b338685095bcaacc79a5e10df9</dd>
+  <dt>vfrott-buster</dt>
+  <dd>b33525f1c70b03d335a08461b3db09ebfa597ad59f719ba24ce5436ca9468ad7</dd>
+  <dt>vfrott-stable</dt>
+  <dd>aabc13b90d250e1c6d94276c9f911faac282e98377283b9519115e960b3118df</dd>
+</dl>
 
-Available packages are listed on the repository home page [repo.vfrott.ca](https://repo.vfrott.ca/). In this repository some packages
-are stored in the <em>expreimental</em> repository. If you wish to install them you can gain access to the <em>exprimental</em>
-repository by installing the package `vfrott-repo-experimental`.
+See the repository web page for instructions and available packages.
 
 ## GemFury
 There are two meta-packages (because at present I am only creating packages for two platforms:
