@@ -16,6 +16,8 @@ This repository is served by a three meta-packages for the architectures I build
   <dd>Stable packages for Raspberry Pi OS Buster 32 bit only (armhf)</dd>
   <dt>vfrott-stable</dt>
   <dd>Stable packages for Debian derived distributions, currently Intel/AMD only.</dd>
+  <dt>vfrott-bookworm</dt>
+  <dd>Stable packages for Raspberry Pi OS Bullseye.</dd>
 </dl>
 
 Checksums for the meta packages are listed on the repository webpage and are copied here for added confidence.
@@ -27,11 +29,13 @@ This repository is served by a three meta-packages for the architectures I build
   <dd>b33525f1c70b03d335a08461b3db09ebfa597ad59f719ba24ce5436ca9468ad7</dd>
   <dt>vfrott-stable</dt>
   <dd>aabc13b90d250e1c6d94276c9f911faac282e98377283b9519115e960b3118df</dd>
+  <dt>vfrott-bookworm</dt>
+  <dd>685942d4be43d115e79d2021fef0947a3fb85e37c89e5f5c4a63395675fdb5b0</dd>
 </dl>
 
 See the repository web page for instructions and available packages.
 
-## GemFury
+## GemFury - Deprecated, no longer receiving updates.
 There are two meta-packages (because at present I am only creating packages for two platforms:
 * [`ve3ysh-repo_2.59.5_amd64.deb`](https://github.com/pa28/hamclock-systemd/releases/download/v2.59.5/ve3ysh-repo_2.59.5_amd64.deb)
 for Intel/AMD architecture running a Debian derived Linxu OS;
