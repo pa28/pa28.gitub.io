@@ -1,5 +1,13 @@
 ## Current Projects
 
+### Co-Pilot
+
+Taking a break from GitHub for two reasons:
+1. I'm quite busy with little time for my projects.
+2. When I do have time, such as during the current holiday season, I won't be syncing with GitHub until they give me a way of disabling Co-Pilot on my account. This
+may seem drastic but I have little respect for LLM companies or developers, and even less for those who have the audacity to decide that I just have to put up with
+that shit associated with my code.
+
 ### [Package Availability](/Repository)
 
 When I create packages for my projects they will be available in
